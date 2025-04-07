@@ -13,8 +13,7 @@ return new class extends Migration {
             $table->unsignedInteger('user_id');
             $table->string('title');
             $table->text('description');
-            $table->string('status', 20)->default('todo');
-            $table->tinyInteger('priority')->default(0);
+            $table->string('status');
             $table->date('deadline');
             $table->boolean('is_deleted')->default(false);
             $table->timestamps();
